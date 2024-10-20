@@ -18,49 +18,49 @@ export type OnClickEvent = MouseEventHandler<HTMLButtonElement>
 export type Rounded = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full' | 'none'
 
 export interface ButtonStyles {
-    base: string
-    color: string
-    size: string
-    rounded: string
-    shadow: string
-    fullWidth: string
+  base: string
+  color: string
+  size: string
+  rounded: string
+  shadow: string
+  fullWidth: string
 }
 
 export interface ButtonProps<T extends ElementType> {
-    as?: T
-    icon?: Icon
-    size?: Size
-    type?: Type
-    color?: Color
-    shadow?: Shadow
-    rounded?: Rounded
-    variant?: Variant
-    children: ReactNode
-    disabled?: Disabled
-    fullWidth?: FullWidth
-    className?: ClassName
-    isLoading?: IsLoading
-    onClick?: OnClickEvent
-    rippleColor?: rippleColor
-    disableRipple?: DisableRipple
-    iconPlacement?: IconPlacement
+  as?: T
+  icon?: Icon
+  size?: Size
+  type?: Type
+  color?: Color
+  shadow?: Shadow
+  rounded?: Rounded
+  variant?: Variant
+  children: ReactNode
+  disabled?: Disabled
+  fullWidth?: FullWidth
+  className?: ClassName
+  isLoading?: IsLoading
+  onClick?: OnClickEvent
+  rippleColor?: rippleColor
+  disableRipple?: DisableRipple
+  iconPlacement?: IconPlacement
 }
 export interface ButtonStyleProps {
-    size: Size
-    color?: Color
-    colors?: Color
-    rounded: Rounded
-    shadow: Shadow
-    fullWidth: FullWidth
-    variant: Variant
+  size: Size
+  color?: Color
+  colors?: Color
+  rounded: Rounded
+  shadow: Shadow
+  fullWidth: FullWidth
+  variant: Variant
 }
 
 export interface DropDownButtonProps {
-    size?: Size
-    color?: Color
-    colors?: Color
-    rounded?: Rounded
-    shadow?: Shadow
-    fullWidth?: FullWidth
-    variant?: Variant
+  size?: Size
+  color?: Color
+  colors?: Color
+  rounded?: Rounded
+  shadow?: Shadow
+  fullWidth?: FullWidth
+  variant?: Variant
 }
