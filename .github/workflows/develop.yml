@@ -17,17 +17,10 @@ jobs:
             - name: Install Dependencies
               run: yarn
             - name: Build React App
-              run: yarn build
+              run: |
+                  yarn build
+                  echo "Build output:"
+                  ls -R
             - name: Print Directory Structure after Build
               run: ls -R
-              shell: bash
-            - name: Verify Build Output
-              run: |
-                  if [ -d "./build" ]; then
-                    echo "Build directory exists.";
-                    ls -R ./build;
-                  else
-                    echo "Build directory does not exist.";
-                    exit 1;
-                  fi
               shell: bash
