@@ -10,15 +10,14 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - name: Use Node.js '20.x'
+            - name: Use Node.js '20..16.1'
               uses: actions/setup-node@v4
               with:
-                  node-version: '20.x'
-                  cache: 'npm'
+                  node-version: '20.16.1'
             - name: Install Dependencies
-              run: npm install
+              run: yarn
             - name: Build React App
-              run: npm run build
+              run: yarn build
             - name: Print Directory Structure after Build
               run: ls -R
               shell: bash
