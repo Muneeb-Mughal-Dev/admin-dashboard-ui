@@ -1,0 +1,26 @@
+name: Node.js CI
+
+on:
+    push:
+        branches: ['develop']
+    pull_request:
+        branches: ['develop']
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js '18.x'
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '18.x'
+            - name: Install Dependencies
+              run: yarn
+            - name: Build React App
+              run: |
+                  yarn build
+                  echo "Build output:"
+                  ls -R
+            - name: Print Directory Structure after Build
+              run: ls -R
+              shell: bash
