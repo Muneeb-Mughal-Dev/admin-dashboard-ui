@@ -4,7 +4,7 @@
  */
 
 const config = {
-    tabWidth: 4,
+    tabWidth: 2,
     semi: false,
     printWidth: 130,
     singleQuote: true,
@@ -21,7 +21,6 @@ const config = {
     tailwindFunctions: ['clsx', 'tw', 'cn'],
     tailwindConfig: './tailwind.config.ts',
     tailwindAttributes: ['className', 'classNames', '*'],
-    importOrderMergeDuplicateImports: true,
     importOrderSortSpecifiers: true,
     importOrder: [
         '^(react/(.*)$)|^(react$)',

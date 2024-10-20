@@ -5,10 +5,10 @@ export type Height = number
 export type Loading = 'lazy' | 'eager'
 
 export interface ImageProps {
-    src: Src
-    alt?: Alt
-    className?: ClassName
-    loading?: Loading
-    width?: Width
-    height?: Height
+  src: Src
+  alt?: Alt
+  className?: ClassName
+  loading?: Loading
+  width?: Width
+  height?: Height
 }

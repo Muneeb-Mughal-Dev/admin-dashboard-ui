@@ -1,28 +1,28 @@
 /* ------------------------ MARQUEE-SLIDER-STYLES ------------------------ */
 
 @layer utilities {
-    .marquee {
-        @apply max-w-max overflow-hidden;
-    }
+  .marquee {
+    @apply max-w-max overflow-hidden;
+  }
 
-    .marquee[data-direction='right'] {
-        --_animation-direction: reverse;
-    }
+  .marquee[data-direction='right'] {
+    --_animation-direction: reverse;
+  }
 
-    .marquee[data-direction='left'] {
-        --_animation-direction: forwards;
-    }
+  .marquee[data-direction='left'] {
+    --_animation-direction: forwards;
+  }
 
-    .marquee_inner {
-        @apply flex flex-wrap gap-6 py-3;
-    }
+  .marquee_inner {
+    @apply flex flex-wrap gap-6 py-3;
+  }
 
-    .marquee[data-animated='true'] .marquee_inner {
-        @apply w-max animate-marquee flex-nowrap;
-    }
+  .marquee[data-animated='true'] .marquee_inner {
+    @apply w-max animate-marquee flex-nowrap;
+  }
 
-    .marquee[data-animated='true'] {
-        -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    }
+  .marquee[data-animated='true'] {
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
 }

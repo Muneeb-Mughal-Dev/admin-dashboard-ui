@@ -1,16 +1,10 @@
-import tailwindcssTypography from "@tailwindcss/typography";
-import type { Config } from "tailwindcss";
-import tailwindcssAnimate from "tailwindcss-animate";
-import {
-  animation,
-  boxShadow,
-  colors,
-  fontFamily,
-  keyframes,
-} from "./src/theme";
+import tailwindcssTypography from '@tailwindcss/typography'
+import type { Config } from 'tailwindcss'
+import tailwindcssAnimate from 'tailwindcss-animate'
+import { animation, boxShadow, colors, fontFamily, keyframes } from './src/theme'
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: colors,
@@ -21,4 +15,4 @@ export default {
     },
   },
   plugins: [tailwindcssAnimate, tailwindcssTypography()],
-} satisfies Config;
+} satisfies Config

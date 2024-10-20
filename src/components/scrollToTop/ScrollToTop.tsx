@@ -3,16 +3,16 @@ import { useLocation } from 'react-router-dom'
 import { marqueeAnimation } from '@src/utils/styles'
 
 export const ScrollToTop = () => {
-    const { pathname } = useLocation()
+  const { pathname } = useLocation()
 
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-        })
-        marqueeAnimation()
-    }, [pathname])
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
+    marqueeAnimation()
+  }, [pathname])
 
-    return <></>
+  return <></>
 }
