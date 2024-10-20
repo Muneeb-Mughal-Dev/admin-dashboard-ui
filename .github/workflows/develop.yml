@@ -23,9 +23,9 @@ jobs:
               shell: bash
             - name: Verify Build Output
               run: |
-                  if [ -d "build" ]; then
+                  if [ -d "./build" ]; then
                     echo "Build directory exists.";
-                    ls -R build;
+                    ls -R ./build;
                   else
                     echo "Build directory does not exist.";
                     exit 1;
