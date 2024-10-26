@@ -111,6 +111,7 @@
     --info-active: 190, 90%, 50%;
     --info-foreground: 210, 6%, 93%;
 
+    --shadow-color: 0 0 0;
     --shadow-color-1: 0 0 0 / 0.02;
     --shadow-color-2: 0 0 0 / 0.06;
     --shadow-color-3: 0 0 0 / 0.3;
@@ -231,6 +232,7 @@
     --info-active: 190, 90%, 50%;
     --info-foreground: 210, 6%, 93%;
 
+    --shadow-color-9: 255 255 255;
     --shadow-color-1: 0 0 0 / 0.05;
     --shadow-color-2: 0 0 0 / 0.2;
     --shadow-color-3: 255 255 255 / 0.15;

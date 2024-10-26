@@ -130,9 +130,10 @@ export const boxShadow = {
   small:
     '0px 0px 5px 0px rgb(var(--shadow-color-1)), 0px 2px 10px 0px rgb(var(--shadow-color-2)), inset 0px 0px 1px 0px rgb(var(--shadow-color-3))',
   medium:
-    '0px 0px 15px 0px rgb(--shadow-color-4)), 0px 2px 30px 0px rgb(--shadow-color-5)), inset 0px 0px 1px 0px rgb(--shadow-color-6))',
+    '0px 0px 15px 0px rgb(var(--shadow-color-4)), 0px 2px 30px 0px rgb(var(--shadow-color-5)), inset 0px 0px 1px 0px rgb(var(--shadow-color-6))',
   large:
-    '0px 0px 30px 0px rgb(--shadow-color-7)), 0px 30px 60px 0px rgb(--shadow-color-8)), inset 0px 0px 1px 0px rgb(--shadow-color-9))',
+    '0px 0px 30px 0px rgb(var(--shadow-color-7)), 0px 30px 60px 0px rgb(var(--shadow-color-8)), inset 0px 0px 1px 0px rgb(var(--shadow-color-9))',
+  'x-large': '0 10px 15px -3px rgb(var(--shadow-color) / 0.2), 0 4px 6px -4px rgb(var(--shadow-color) / 0.2)',
 }
 
 export const animation = {

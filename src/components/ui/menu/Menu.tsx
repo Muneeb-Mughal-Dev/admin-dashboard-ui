@@ -25,11 +25,11 @@ export const Menu = () => {
                         <Submenu item={menu} />
                       </Fragment>
                     : <Fragment key={menu.id}>
-                        <NavLink path={menu.path!} title={menu.title} />
+                        <NavLink path={menu.path!} title={menu.title} icon={menu.icon} />
                       </Fragment>,
                   )}
                 </Fragment>
-              : <NavLink key={item.id} path={item.path!} title={item.title} />,
+              : <NavLink key={item.id} path={item.path!} title={item.title} icon={item.icon} />,
             )}
           </div>
         </LayoutGroup>

@@ -2,14 +2,15 @@ import { motion as M } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useSidebar } from '@src/hooks'
 import { Button } from '@src/components/ui/button'
-import { Icon } from '@src/components/ui/icon'
+import { Icon, IconProps } from '@src/components/ui/icon'
 
 interface NavLinkProps {
   path: string
   title: string
+  icon: IconProps['name']
 }
 
-export const NavLink: React.FC<NavLinkProps> = ({ path, title }) => {
+export const NavLink: React.FC<NavLinkProps> = ({ path, title, icon }) => {
   const { open, animate } = useSidebar()
   return (
     <Button
@@ -19,7 +20,7 @@ export const NavLink: React.FC<NavLinkProps> = ({ path, title }) => {
       variant='outline'
       className='group/sidebar flex items-center justify-start gap-2 border-none py-2 text-foreground'
     >
-      <Icon name='menu' />
+      <Icon name={icon} />
       <M.span
         animate={{
           display:

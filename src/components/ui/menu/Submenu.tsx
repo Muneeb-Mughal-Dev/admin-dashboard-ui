@@ -23,7 +23,7 @@ export const Submenu: React.FC<SubmenuProps> = ({ item }) => {
     <Dropdown>
       <DropdownButton size='sm' variant='outline' className='justify-between border-none text-foreground'>
         <div className='group/sidebar flex items-center justify-start gap-2'>
-          <Icon name='menu' />
+          <Icon name={item.icon} />
           <M.span
             animate={{
               display:
@@ -49,7 +49,9 @@ export const Submenu: React.FC<SubmenuProps> = ({ item }) => {
           <Fragment key={submenu.id}>
             <DropdownItem to={submenu.path}>
               <span className='truncate text-sm font-semibold'>{submenu.title}</span>
-              <DropdownDescription>{submenu.title}</DropdownDescription>
+              <DropdownDescription>
+                <Icon name={submenu.icon} size={18} />
+              </DropdownDescription>
             </DropdownItem>
             <DropdownDivider />
           </Fragment>
