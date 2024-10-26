@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useUpload } from '@src/hooks/useUpload'
 import { GridPattern } from '@src/components/ui/background'
@@ -8,6 +8,10 @@ export const FileUpload = ({ onChange }: { onChange?: (files: File[]) => void })
   const { files, getRootProps, handleFiles, isDragActive, removeFile } = useUpload()
 
   const fileInputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    onChange && onChange(files)
+  }, [files])
 
   const handleFileChange = (newFiles: File[]) => {
     handleFiles(newFiles)

@@ -1,12 +1,29 @@
 // import { DropDown } from '@src/components/ui/dropdownMenu/Dropdown'
+import { useCallback, useState } from 'react'
 import { FileUpload } from '@src/components/ui/form'
 
 export default function HomePage() {
+  const [uploadedFiles, setUploadedFiles] = useState<File[]>([])
+
+  const handleFileChange = useCallback((files: File[]) => {
+    setUploadedFiles(files)
+  }, [])
+
   return (
     <>
       Home Page
       {/* <DropDown /> */}
-      <FileUpload />
+      <div>
+        <FileUpload onChange={handleFileChange} />
+        <div>
+          <h3>Uploaded Files:</h3>
+          <ul>
+            {uploadedFiles.map((file) => (
+              <li key={file.name}>{file.name}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
       {/* <div className='flex gap-2'>
                 {[...new Array(4)].map((i) => (
                     <div key={'first-array' + i} className='h-20 w-full animate-pulse rounded-lg bg-default'></div>
