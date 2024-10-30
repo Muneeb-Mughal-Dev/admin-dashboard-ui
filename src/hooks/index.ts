@@ -1,4 +1,5 @@
-export { useRouter } from '@src/hooks/useRouter'
 export { useTheme } from '@src/hooks/useTheme'
 export { useLayout } from '@src/hooks/useLayout'
+export { useRouter } from '@src/hooks/useRouter'
 export { useSidebar } from '@src/hooks/useSidebar'
+export { useOutsideClick } from '@src/hooks/useOutsideClick'

@@ -44,7 +44,7 @@ export function RootLayout() {
       </Sidebar>
       <div className='flex flex-1 flex-col'>
         <Navbar />
-        <div className='border-1 flex h-full w-full flex-1 flex-col gap-2 rounded-tl-md border-divider bg-default-50/50 p-2 md:p-10'>
+        <div className='border-1 flex h-full w-full flex-1 flex-col gap-2 overflow-y-scroll rounded-tl-md border-divider bg-default-50/50 p-2 md:p-10'>
           <Outlet />
         </div>
       </div>
