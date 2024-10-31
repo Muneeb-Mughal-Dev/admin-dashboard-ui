@@ -2,6 +2,7 @@
 
 @import './marquee.css';
 @import './global-colors.css';
+@import './scrollbar.css';
 
 @tailwind base;
 @tailwind components;

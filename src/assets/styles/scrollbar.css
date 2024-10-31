@@ -1,0 +1,20 @@
+@layer {
+  .scrollbar::-webkit-scrollbar {
+    @apply w-2 transition-colors duration-300 ease-in-out;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent transition-colors duration-300 ease-in-out;
+  }
+  .scrollbar:hover::-webkit-scrollbar-track {
+    @apply bg-default-300 transition-colors duration-300 ease-in-out;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-transparent transition-colors duration-300 ease-in-out;
+  }
+  .scrollbar:hover::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-default-500 transition-colors duration-300 ease-in-out;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-default-600 transition-colors duration-300 ease-in-out;
+  }
+}
