@@ -1,14 +1,9 @@
 import { useState } from 'react'
 import { AnimatePresence, motion as M } from 'framer-motion'
 import { main, secondary } from '@src/components/animations'
+import { type UploadButtonProps } from '@src/components/ui/form/fileUpload'
 import { Icon } from '@src/components/ui/icon'
 import { cn } from '@src/utils/styles'
-
-export interface UploadButtonProps {
-  className?: string
-  onClick: () => void
-  isDragActive: boolean
-}
 
 export const UploadButton: React.FC<UploadButtonProps> = ({ onClick, className, isDragActive }) => {
   const [isAnimating, setIsAnimating] = useState(false)
@@ -33,7 +28,7 @@ export const UploadButton: React.FC<UploadButtonProps> = ({ onClick, className, 
             damping: 15,
           }}
           className={cn(
-            'shadow-large relative z-40 mx-auto flex h-32 w-full max-w-[8rem] items-center justify-center rounded-md bg-default-50 text-default-600 transition-colors duration-300 ease-in-out group-hover/file:bg-primary-hover group-hover/file:text-primary-foreground',
+            'relative z-40 mx-auto flex h-32 w-full max-w-[8rem] items-center justify-center rounded-md bg-default-50 text-default-600 shadow-large transition-colors duration-300 ease-in-out group-hover/file:bg-primary-hover group-hover/file:text-primary-foreground',
             className,
           )}
         >

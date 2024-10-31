@@ -15,12 +15,12 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
   }
 
   static getDerivedStateFromError(error: Error): Partial<ErrorBoundaryState> {
-    console.error('Error caught in boundary:', error)
+    console.error('Error caught in custom boundary:', error)
     return { hasError: true }
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
-    console.error('Error caught in boundary:', error, errorInfo)
+    console.error('Error caught in custom boundary:', error, errorInfo)
   }
 
   render() {

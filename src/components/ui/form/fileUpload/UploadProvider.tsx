@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FileRejection, useDropzone } from 'react-dropzone'
-import { UploadContext, type UploadProviderProps } from '@src/contexts/uploadContext'
+import { UploadContext, type UploadProviderProps } from '@src/components/ui/form/fileUpload'
 
 export const UploadProvider: React.FC<UploadProviderProps> = ({ children }) => {
   const [files, setFiles] = useState<File[]>([])

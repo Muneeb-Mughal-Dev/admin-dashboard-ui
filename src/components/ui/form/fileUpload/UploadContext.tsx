@@ -1,4 +1,4 @@
 import { createContext } from 'react'
-import { UploadContextType } from '@src/contexts/uploadContext'
+import { type UploadContextType } from '@src/components/ui/form/fileUpload'
 
 export const UploadContext = createContext<UploadContextType | undefined>(undefined)

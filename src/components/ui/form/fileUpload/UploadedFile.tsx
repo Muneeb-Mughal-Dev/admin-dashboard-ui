@@ -1,13 +1,8 @@
 import { AnimatePresence, motion as M } from 'framer-motion'
 import { Button } from '@src/components/ui/button'
+import { type UploadedFileProps } from '@src/components/ui/form/fileUpload'
 import { Icon } from '@src/components/ui/icon'
 import { cn } from '@src/utils/styles'
-
-export interface UploadedFileProps {
-  files: File[]
-  className?: string
-  removeFile: (name: string) => void
-}
 
 export const UploadedFile: React.FC<UploadedFileProps> = ({ files, className, removeFile }) => {
   return (

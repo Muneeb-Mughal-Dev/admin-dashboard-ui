@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { UploadContext as Context } from '@src/contexts/uploadContext'
+import { UploadContext as Context } from '@src/components/ui/form/fileUpload'
 
 export const useUpload = () => {
   const context = useContext(Context)

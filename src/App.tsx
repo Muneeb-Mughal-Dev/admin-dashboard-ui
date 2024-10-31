@@ -2,7 +2,6 @@ import { router } from '@src/router/router'
 import { RouterProvider } from 'react-router-dom'
 import { LayoutProvider } from '@src/contexts/layoutContext'
 import { ThemeProvider } from '@src/contexts/themeContext'
-import { UploadProvider } from '@src/contexts/uploadContext'
 import { useRouter } from '@src/hooks'
 import { Loader } from '@src/components/ui'
 import { ErrorBoundary } from '@src/utils/shared/ErrorBoundary'
@@ -21,9 +20,7 @@ export const App = () => {
     <ErrorBoundary>
       <ThemeProvider>
         <LayoutProvider>
-          <UploadProvider>
-            <RouterProvider router={routerInstance} fallbackElement={<Loader />} />
-          </UploadProvider>
+          <RouterProvider router={routerInstance} fallbackElement={<Loader />} />
         </LayoutProvider>
       </ThemeProvider>
     </ErrorBoundary>
