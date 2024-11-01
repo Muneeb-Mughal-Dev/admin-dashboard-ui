@@ -40,8 +40,10 @@ export default function HomePage() {
           </ModalBody>
         </Modal>
       </div>
-      <div>
-        <FileUpload onChange={handleFileChange} />
+      <div className='max-w-sm'>
+        <div>
+          <FileUpload onChange={handleFileChange} />
+        </div>
         <div className='space-y-4 px-4 py-8'>
           <h3>Uploaded Files:</h3>
           <ul className='space-y-2'>

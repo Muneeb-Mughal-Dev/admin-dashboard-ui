@@ -8,10 +8,7 @@ export const Mobile = ({ className, children, ...props }: React.ComponentProps<'
   const { open, setOpen } = useSidebar()
 
   return (
-    <div className={cn('flex w-full flex-row items-center justify-between bg-background px-4 py-2 md:hidden')} {...props}>
-      <Button size='xs' onClick={() => setOpen(!open)} color='default' className='ml-auto'>
-        <Icon name='menu' size={22} />
-      </Button>
+    <div className='md:hidden' {...props}>
       <AnimatePresence>
         {open && (
           <M.div

@@ -31,7 +31,7 @@ export const Upload = ({ onChange }: { onChange?: (files: File[]) => void }) => 
           damping: 35,
           velocity: 50,
         }}
-        className='relative block max-h-[450px] w-full overflow-hidden rounded-md border border-divider p-6'
+        className='relative block max-h-[450px] w-full overflow-hidden rounded-md border border-divider px-2 py-4 md:px-6 md:py-6'
       >
         <input
           ref={fileInputRef}
@@ -50,7 +50,7 @@ export const Upload = ({ onChange }: { onChange?: (files: File[]) => void }) => 
           </div>
           <div className='relative mx-auto w-full max-w-xl cursor-pointer space-y-6' {...getRootProps()}>
             <UploadButton isDragActive={isDragActive} onClick={handleClick} />
-            <div className='flex max-h-[125px] flex-col gap-2 overflow-y-scroll'>
+            <div className='scrollbar flex max-h-[125px] flex-col gap-2 overflow-y-scroll px-2'>
               {files.length > 0 && <UploadedFile files={files} removeFile={removeFile} />}
             </div>
           </div>

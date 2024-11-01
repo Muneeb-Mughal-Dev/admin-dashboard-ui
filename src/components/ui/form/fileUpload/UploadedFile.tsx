@@ -28,13 +28,13 @@ export const UploadedFile: React.FC<UploadedFileProps> = ({ files, className, re
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 layout
-                className='max-w-xs truncate text-base/7 text-default-600'
+                className='max-w-[200px] truncate text-base/7 text-default-600'
               >
                 {file.name}
               </M.p>
             </div>
 
-            <div className='mt-2 flex w-full flex-col items-start justify-between text-sm text-default-400 md:flex-row md:items-center'>
+            <div className='flex w-full flex-col flex-wrap items-start justify-between gap-2 text-sm text-default-400 md:flex-row md:items-center'>
               <M.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} layout className='flex items-center gap-2'>
                 <M.p
                   initial={{ opacity: 0 }}

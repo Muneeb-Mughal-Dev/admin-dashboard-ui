@@ -9,7 +9,7 @@ export function RootLayout() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className='mx-auto flex h-dvh w-full flex-1 flex-col overflow-hidden rounded-md border border-divider bg-background md:flex-row'>
+    <div className='mx-auto flex h-dvh w-full flex-1 flex-col rounded-md border border-divider bg-background md:flex-row md:overflow-hidden'>
       <Sidebar open={open} setOpen={setOpen}>
         <SidebarBody className='justify-between gap-10'>
           <div className='flex flex-1 flex-col overflow-y-auto overflow-x-hidden'>
@@ -43,8 +43,8 @@ export function RootLayout() {
         </SidebarBody>
       </Sidebar>
       <div className='flex flex-1 flex-col'>
-        <Navbar />
-        <div className='border-1 scrollbar flex h-full w-full flex-1 flex-col gap-2 overflow-y-scroll rounded-tl-md border-divider bg-default-50/50 p-2 md:p-10'>
+        <Navbar open={open} setOpen={setOpen} />
+        <div className='border-1 md:scrollbar flex h-full w-full flex-1 flex-col gap-2 rounded-tl-md border-divider bg-default-50/50 p-2 md:overflow-y-scroll md:p-10'>
           <Outlet />
         </div>
       </div>
